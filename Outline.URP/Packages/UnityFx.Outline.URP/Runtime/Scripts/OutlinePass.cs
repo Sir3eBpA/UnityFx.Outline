@@ -49,7 +49,7 @@ namespace UnityFx.Outline.URP
 			var outlineResources = _feature.OutlineResources;
 			var outlineSettings = _feature.OutlineSettings;
 			var camData = renderingData.cameraData;
-			var depthTexture = new RenderTargetIdentifier("_CameraDepthTexture");
+			var depthTexture = _renderer.cameraDepthTargetHandle;
 
 			if (_feature.OutlineLayerMask != 0)
 			{
